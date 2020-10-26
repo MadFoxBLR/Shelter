@@ -1,0 +1,204 @@
+$color-prymery: #f1cdb3;
+$color-primary-light: #FDDCC4;
+$color-dark-3xl: #292929;
+$color-dark-2xl: #444444;
+$color-dark-xl: #4C4C4C;
+$color-dark-l: #545454;
+$color-dark-m: #B2B2B2;
+$color-dark-s: #CDCDCD;
+$color-light-s:  #FAFAFA;
+
+$color-light-xl:  #FFFFFF;
+
+@mixin h2 {
+    font: {
+        family: Georgia;
+        size: 4.4rem;
+        weight: 400;
+    }
+    line-height: 130%;
+}
+@mixin h3 {
+    font: {
+        family: Georgia;
+        size: 3.5rem;
+        weight: 400;
+    }
+    line-height: 130%;
+    letter-spacing: 0.06em;
+}
+
+@mixin h4 {
+    font: {
+        family: Georgia;
+        size: 2rem;
+    }
+    line-height: 115%;
+    letter-spacing: 0.06em;
+}
+
+@mixin pagination-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5.2rem;
+    height: 5.2rem;
+    box-shadow: inset 0 0 0 0.3rem $color-prymery;
+    border-radius: 100%;
+    transition-duration: .5s;
+    padding: 1.9rem;
+    cursor: pointer;
+    background: none;
+    
+    &:hover {
+        box-shadow: none;
+        background-color: $color-primary-light;
+    }
+    
+}
+@mixin pagination-disabled {
+    @include pagination-button();
+   
+}
+
+
+/*____________________________________________________________________________________*/
+
+.header-pets {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    max-width: 100%;
+    position: sticky;
+    min-height: 12rem;
+    background-color: $color-light-xl;
+    z-index: 2;   
+    
+}
+
+
+.Header__logo {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.Header__logo__name {
+    letter-spacing: 0.06em;
+    
+    color: $color-dark-l;
+    font-family: Georgia;
+    
+    font-size: 3.2rem;
+    /*letter-spacing: 0.12rem;*/
+
+    line-height: 110%;
+}
+.Header__logo__text {
+    font-family: Arial;
+   margin-top: 0.3rem;
+   text-align: center;
+   letter-spacing: 0.1em;
+    font-size: 1.3rem;
+    line-height: 1.07rem;
+    padding-top: 10px;
+   
+    color: $color-dark-3xl;
+}
+.nav {
+   display: flex;
+   justify-content: space-between;
+    width: 443px;
+    
+}
+.list{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+ 
+}
+
+.list__item{
+    display: flex;
+    align-items: center;
+
+}
+
+.list__item_active{
+     border-bottom: .3rem solid $color-prymery;
+    }
+
+.list_link{
+    font-size: 1.5rem;
+    font-family: Arial;
+    color: $color-dark-3xl;
+    line-height: 160%;
+}
+
+.list__link-disabled {
+    color: $color-dark-l;
+}
+
+.section {
+    background-color:#F6F6F6;
+   
+    &__wrapper {
+        flex-direction: column;
+        padding-bottom: 10rem;
+        padding-top: 8rem;
+   }
+   &__pets-title {
+       @include h3();
+       color: $color-dark-l;
+       text-align: center;
+        span {
+            display: block;
+            
+        }
+   }
+   &__pets-cards {
+       margin-top: 6rem;
+       display: flex;
+       flex-wrap: wrap;
+       column-gap: 4rem;
+       row-gap: 3rem;
+       .pets__card-item{
+           margin: 0;
+       }
+   }
+   .main__pagination {
+       display: flex;
+       align-items:center;
+       justify-content: center;
+
+       margin-top: 6rem;
+       &-button {
+        margin: 0 1rem;
+        @include h4();
+
+
+           @include pagination-button();
+
+           &-active {
+                box-shadow: none;
+                background-color: $color-prymery;
+                cursor: default;
+            &:hover {
+                background-color: $color-prymery;
+            }
+           }
+           &:disabled {
+            box-shadow: inset 0 0 0 0.3rem $color-dark-s;
+            &:hover {
+                background-color: transparent;
+                box-shadow: inset 0 0 0 0.3rem $color-dark-s;
+                cursor: default;
+            }
+           }
+       }
+   }
+}
+
