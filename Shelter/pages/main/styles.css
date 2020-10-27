@@ -699,6 +699,92 @@ h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
         margin-left: 15.5rem;
     }
    
+  }
+
   
+@media (max-width: 320px) {
+    
+    .nav{
+        display: none;
+    }
+    .hero__image {
+     
+      padding-left: 1rem;
+        
+    }
+    .hero__subtitle {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    
+
+    .hero__content{
+       margin: 0;
+    }
+    .about__wrapper {
+        padding: 6rem 1.5rem 7rem 1.5rem;
+        text-align: justify;
+    }
+  .about__title{
+    font-size: 2.5rem;
+  }
+  .pets__card-item.hidden_phone {
+    display: none;
 
   }
+  .pets__contetnt{
+    position: relative;
+    align-items: flex-end;
+  }
+  .slider__button {
+    position: absolute;
+    left: 20%;
+  }
+  .slider__button-reverted{
+    position: absolute;
+    right: 20%;
+  }
+  .pets__button{
+    margin-top: 4rem;
+  }
+  .pets__title {
+    font-size: 2rem;
+  }
+  .help_content{
+    column-gap: 5rem;
+    row-gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  .donation__content{
+    margin: 2rem;
+    align-items: center;
+  }
+  .donation{
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+  }
+  .donation__title span{
+    font-size: 2.5rem;
+  }
+  .donation__subtitle{
+    font-size: 1.3rem;
+  }
+  .donation__paymant-text{
+    font-size: 1.4rem;
+  }
+  .donation__descriptoin{
+    text-align: justify;
+  }
+  .donation__image{
+    margin-top: 1rem;
+    width: 90%;
+  }
+  .wrapper__content {
+      flex-direction: column;
+      padding: 2rem;
+  }
+  .footer__contacts-title, .footer__location-title{
+    font-size: 2.5rem;
+    text-align: center;
+  }
+}
