@@ -203,4 +203,57 @@
           box-shadow: inset 0 0 0 0.3rem #CDCDCD;
   cursor: default;
 }
+
+
+@media (max-width: 768px) {
+  .header-pets {
+    padding: 2rem;
+  }
+  .section__wrapper {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+  .section__pets-cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main__pagination {
+    margin-top: 1rem;
+  }
+  .wrapper__footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 568px) {
+  .nav {
+    display: none;
+  }
+  .header-pets {
+    position: fixed;
+  }
+}
+
+@media (max-width: 320px) {
+  .nav {
+    display: none;
+  }
+  .section .main__pagination-button {
+    margin: 0 0.3rem;
+  }
+  .popup__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .popup {
+    padding: 0;
+  }
+}
+/*# sourceMappingURL=pets.css.map */
 /*# sourceMappingURL=pets.css.map */
