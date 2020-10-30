@@ -242,6 +242,11 @@
   .nav {
     display: none;
   }
+   .section__wrapper {
+    padding-top: 13rem;
+    padding-bottom: 2rem;
+  }
+  
   .section .main__pagination-button {
     margin: 0 0.3rem;
   }
