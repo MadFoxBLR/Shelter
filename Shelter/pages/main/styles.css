@@ -704,65 +704,66 @@ h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
 }
 
 @media (max-width: 1200px) {
-   .header {
-    padding: 0 3rem;
-   }
-   .hero {
+    .header {
+     padding: 0 3rem;
+    }
+    .hero {
     display: block;
-}
-
-    .hero__subtitle {
-        max-width: 46rem;
-
-    }
-
-    .hero__content{
-       padding-left: 3rem;
-    }
-    .about__wrapper{
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-    .about__img-wrapper {
-        margin-top: 8rem;
-    }
-    .pets__card-item.hidden {
-        display: none;
-    }
-    .pets__card-item{
-        margin: 0 1rem;
-    }
-    .donation__wrapper {
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-    .donation__image{
-        margin-top: 6rem;
-        width: 50%;
-    }
-    .footer-wrapper{
-        display: block;
-    }
-    .wrapper__content {
-        justify-content: space-around;
-        padding-right: 0;
-    }
-    .footer__image-wrapper{
-        display: flex;
-        justify-content: center;
-    }
-  }
-
+    padding-left: 16rem;
+ }
+ 
+     .hero__subtitle {
+         max-width: 46rem;
+ 
+     }
+ 
+     .hero__content{
+        padding-left: 3rem;
+     }
+     .about__wrapper{
+         flex-direction: column-reverse;
+         align-items: center;
+     }
+     .about__img-wrapper {
+         margin-top: 8rem;
+     }
+     .pets__card-item.hidden {
+         display: none;
+     }
+     .pets__card-item{
+         margin: 0 1rem;
+     }
+     .donation__wrapper {
+         flex-direction: column-reverse;
+         align-items: center;
+     }
+     .donation__image{
+         margin-top: 6rem;
+         width: 50%;
+     }
+     .footer-wrapper{
+         display: block;
+     }
+     .wrapper__content {
+         justify-content: space-around;
+         padding-right: 0;
+     }
+     .footer__image-wrapper{
+         display: flex;
+         justify-content: center;
+     }
+   }
 
 @media (max-width: 768px) {
     
-    
+    .hero {
+       
+        padding-left: 0;
+     }
     .hero__image {
        padding-left: 16.9rem;
         
     }
-
-    
 
     .hero__content{
         margin-left: 15.5rem;
@@ -771,7 +772,7 @@ h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
   }
 
   
-@media (max-width: 320px) {
+@media (max-width: 600px) {
     
     .nav{
         display: none;
