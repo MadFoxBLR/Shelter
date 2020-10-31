@@ -277,7 +277,6 @@
 }
 
 @media (max-width: 320px) {
-  
   .Header__logo {
     z-index: 10;
     
@@ -299,12 +298,9 @@
   color: #FFF;
   font-size: 2.4rem;
 }
- 
-   .section__wrapper {
-    padding-top: 13rem;
-    padding-bottom: 2rem;
-  }
-  
+
+
+
   .section .main__pagination-button {
     margin: 0 0.3rem;
   }
@@ -314,9 +310,13 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+ 
+
   .popup {
     padding: 0;
+    left: 0;
   }
 }
 /*# sourceMappingURL=pets.css.map */
-/*# sourceMappingURL=pets.css.map */
+
+
