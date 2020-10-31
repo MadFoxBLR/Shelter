@@ -774,9 +774,76 @@ h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
   
 @media (max-width: 600px) {
     
-    .nav{
-        display: none;
+    .Header__logo{
+        z-index: 10;
     }
+
+    .nav{
+       
+        position: fixed;
+        top: 0;
+        left: 70rem;
+        width: 100%;
+        height: 100%;
+        background-color: #333;
+        transition: left .5s linear;
+        z-index: 8;
+    }
+    .nav.active{
+        left: 0;
+        transition: left .5s linear;
+    }
+    .list {
+        display: block;
+        padding: 23rem 2rem;
+    }
+    .list li{
+        margin-bottom: 3rem;
+        align-items: center;
+        justify-content: center
+    }
+
+
+    .header__burger{
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 9;
+    }
+    .header__burger::before, .header__burger::after {
+        content: "";
+        background-color: #F1CDB3;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+       
+    }
+    .header__burger::before{
+        top: 0;
+       
+    }
+    .header__burger::after{
+        bottom: 0;
+    }
+    .header__burger.active{
+        transform: rotate(90deg);
+    }
+
+
+    .header__burger span{
+        position: absolute;
+        background-color: #F1CDB3;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+     }
+     .list_link {
+        font-size: 3.2rem;
+    }
+    
     .hero__image {
      
       padding-left: 1rem;
